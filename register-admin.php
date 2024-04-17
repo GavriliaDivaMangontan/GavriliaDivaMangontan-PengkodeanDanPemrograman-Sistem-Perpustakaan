@@ -105,13 +105,13 @@ button:hover{
 
 			<div class="signup">
 				<form action="register-proses.php" method="post">
-					<label for="chk" aria-hidden="true">Tambah Petugas</label>
+					<label for="chk" aria-hidden="true">Tambah Admin</label>
 					<input type="text" name="username" placeholder="Username" required="">
 					<input type="password" name="password" placeholder="Password" required="">
 					<input type="email" name="email" placeholder="Email" required="">
 					<input type="text" name="nama" placeholder="Nama Lengkap" required="">
 					<input type="text" name="alamat" placeholder="Alamat" required="">
-					<input type="hidden" name="level" value="petugas" required="">
+					<input type="hidden" name="level" value="admin" required="">
 					<button type="submit">Tambah</button>
 					<p style="color: white; text-align: center;"><a href="anggota.php" style="text-decoration: none; color: #007bff;">Kembali</a></p>
 				</form>

@@ -1,5 +1,5 @@
 <?php
-include 'koneksi.php';
+include '../koneksi.php';
 $username = $_POST['username'];
 $password = md5($_POST['password']);
 $email = $_POST['email'];
@@ -10,8 +10,8 @@ $level =$_POST['level'];
 $query = "CALL tambahuser ('','$username', '$password', '$email', '$nama_lengkap', '$alamat', '$level')";
 mysqli_query($connect,$query);
 echo '<script>
-alert("Register Anda Berhasil");
-window.location="login.php";
+alert("Menambahkan Akun Berhasil");
+window.location="anggota.php";
 </script>';
 mysqli_close();
 ?>
